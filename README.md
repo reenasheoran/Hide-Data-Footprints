@@ -1,4 +1,4 @@
-# Training model with unseen data
+# Hide Data Footprints
 What if instead of bringing the corpus of training data to one place to train a model, you 
 could bring the model to the data wherever it’s generated?
 First, it means in order to participate in the 
