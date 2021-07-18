@@ -1,6 +1,6 @@
 # Hide Data Footprints
 This is an email spam/ham classifier that is trained using privacy-preserving federated learning.<br>
-![concept](
+![concept](https://github.com/reenasheoran/Hide-Data-Footprints/blob/main/static/concept.png)
 ## Motivation
 
 
