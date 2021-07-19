@@ -21,7 +21,7 @@ This project is developed using python 3.8.8. If you are using any lower version
 **STEP 1:** git clone the repository
 ```
 git clone https://github.com/reenasheoran/Hide-Data-Footprints.git
-cd Hide-Data-Footprints
+cd Hide-Data-Footprints-main
 ```
 **STEP 2:** To execute the basic model training on centralized data run the following command.<br>
 ```
