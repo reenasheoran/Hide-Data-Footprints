@@ -1,6 +1,12 @@
 # Hide Data Footprints
 This is an email spam/ham classifier that is trained using privacy-preserving federated learning.<br><br>
 ![concept](https://github.com/reenasheoran/Hide-Data-Footprints/blob/main/static/concept.png)
+## Project Overview
+In this project, I began with the simple email spam/ham classifier that was created without the use of any standard library such as keras, tensorflow or Pytorch. Then, I took the steps as follows:- <br>
+1. I created my first model using a centralized data to check the level of model accuracy when the data is at one place.<br>
+2. In my second model I simulated a federated learning environment that has multiple data locations. The model is trained using data availble on those locations by sending and receiving model updates.<br>
+3. Then I tried reverse engineering on the model received from one of the client node, through federated learning, to get some idea about the respective client's training data.<br>
+4. Finally, I implemented a secure model exchange method <br>
 ## Motivation
 The data owned by a single party may be very homogeneous, resulting in overfitting which negatively impacts accuracy when the model is applied to previously unseen data, i.e., poor generalizability. Utilizing data from diverse parties to train deep models can help mitigate this problem. However, collaborative model training may not be viable due to privacy concerns. Federated learning (FL), which incorporates privacy preservation techniques into collaborative model training, offers a potential solution to this challenge.
 ## Federated Learning
