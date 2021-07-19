@@ -9,7 +9,6 @@ This is an email spam/ham classifier that is trained using privacy-preserving fe
 [Data Preparation](#Data-Preparation)<br>
 [Project Lifecycle](#Project-Lifecycle)<br>
 [Screen Shots](#Screen-Shots)<br>
-[Conclusion](#Conclusion)<br>
 [Application](#Application)<br>
 [References](#References)<br>
 ## Motivation
@@ -55,13 +54,12 @@ In this project, I began with the simple email spam/ham classifier that was crea
 ## Screen Shots
 1. Output of Basic model, where I got an accuracy of 99.45%. Here, the complete data is stored at one centralized serever.<br><br>
 ![Image1](https://github.com/reenasheoran/Hide-Data-Footprints/blob/main/static/Basic_Output.png)<br><br>
-2. Output of federated model, where I got an accuracy of  on the same data,this time the data is splitted and stored at several locations.<br><br>
+2. Output of federated model, where I got an accuracy of 98.8% on the same data, this time the data is splitted and stored at several locations.<br><br>
 ![Image2](https://github.com/reenasheoran/Hide-Data-Footprints/blob/main/static/Federated_Output.png)<br><br>
 3. Output of Client_data_leak, in this you can see that the model receiver with the help of reverse engineering got an idea of clients private data.<br><br>
 ![Image3](https://github.com/reenasheoran/Hide-Data-Footprints/blob/main/static/CDL_Output.png)<br><br>
-# Output of Encrypted_Federated model, here the data is encrypted and exchanged among clients. Further the final model sent to the model creator is made completely anonymous.<br><br>
+4. Output of Encrypted_Federated model,where I got the model accuracy same as that of basic model. Here the data is encrypted and exchanged among clients. Further the final model sent to the model creator is made completely anonymous.<br><br>
 ![Image4](https://github.com/reenasheoran/Hide-Data-Footprints/blob/main/static/EFederated_Output.png)<br><br>
-## Conclusion
 ## Application 
 1. Using secure federated learning, the Valuable models in healthcare, personal management, and other sensitive areas can be trained without requiring anyone to disclose information about themselves. In theory, people could retain control over the only copy of their personal data .<br><br>
 2. This technique will also have a huge impact on the competitive landscape of deep learning in corporate competition and entrepreneurship. Large enterprises that previously wouldn’t (or couldn’t, for legal reasons) share data about their customers can potentially still earn revenue from that data.<br<br>
