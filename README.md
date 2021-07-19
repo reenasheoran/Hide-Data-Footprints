@@ -9,6 +9,7 @@ This is an email spam/ham classifier that is trained using privacy-preserving fe
 [Data Preparation](#Data-Preparation)<br>
 [Project Lifecycle](#Project-Lifecycle)<br>
 [Screen Shots](#Screen-Shots)<br>
+[Conclusion](#Conclusion)<br>
 [Application](#Application)<br>
 [References](#References)<br>
 ## Motivation
@@ -52,6 +53,7 @@ In this project, I began with the simple email spam/ham classifier that was crea
 3. Then I tried reverse engineering on the model received from one of the client node, through federated learning, to get some idea about the respective client's training data (refer to Client_data_leak.py).<br>
 4. Finally, I implemented a privacy-preserving federated learning in which model is first encrypted and then send to other node ( refer to Encrypted_Federated.py).<br>
 ## Screen Shots
+## Conclusion
 ## Application
 First, it means in order to participate in the 
 deep learning supply chain, people don’t technically have to send their data to anyone. 
