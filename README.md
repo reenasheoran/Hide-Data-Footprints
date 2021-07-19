@@ -2,8 +2,15 @@
 This is an email spam/ham classifier that is trained using privacy-preserving federated learning.<br><br>
 ![concept](https://github.com/reenasheoran/Hide-Data-Footprints/blob/main/static/concept.png)
 ## Table of content
-
-
+[Motivation](#Motivation)<br>
+[Federated Learning](#Federated-Learning)<br>
+[Installation](#Installation)<br>
+[Data Collection](#Data-Collection)<br>
+[Data Preparation](#Data-Preparation)<br>
+[Project Lifecycle](#Project-Lifecycle)<br>
+[Screen Shots](#Screen-Shots)<br>
+[Application](#Application)<br>
+[References](#References)<br>
 ## Motivation
 The data owned by a single party may be very homogeneous, resulting in overfitting which negatively impacts accuracy when the model is applied to previously unseen data, i.e., poor generalizability. Utilizing data from diverse parties to train deep models can help mitigate this problem. However, collaborative model training may not be viable due to privacy concerns. Federated learning (FL), which incorporates privacy preservation techniques into collaborative model training, offers a potential solution to this challenge.
 ## Federated Learning
@@ -27,9 +34,9 @@ python Federated.py
 ```
 python Client_data_leak.py
 ```
-**STEP 5:** To execute the secure federateed learning run the following command.<br>
+**STEP 5:** To execute the secure federated learning run the following command.<br>
 ```
-python Encrypted_federated.py
+python Encrypted_Federated.py
 ```
 ## Data Collection
 The data was taken from http://www2.aueb.gr/users/ion/data/enron-spam/, which was in partially preprocessed form.The data originally contains 43908 emails with spam/ham labels.<br>
@@ -41,11 +48,11 @@ I used the data in two ways and did splitting of data accordingly.<br>
 ## Project Lifecycle
 In this project, I began with the simple email spam/ham classifier that was created without the use of any standard library such as keras, tensorflow or Pytorch. Then, I took the steps as follows:- <br>
 1. I created my first model using a centralized data to check the model accuracy level when the data is at one place (refer to Basic.py).<br>
-2. In my second model I simulated a federated learning environment that has multiple data locations. The model is trained using the data available on those locations by sending and receiving model updates (refer to federated.py).<br>
+2. In my second model I simulated a federated learning environment that has multiple data locations. The model is trained using the data available on those locations by sending and receiving model updates (refer to Federated.py).<br>
 3. Then I tried reverse engineering on the model received from one of the client node, through federated learning, to get some idea about the respective client's training data (refer to Client_data_leak.py).<br>
-4. Finally, I implemented a privacy-preserving federated learning in which model is first encrypted and then send to other node ( refer to Encrypted_federated.py).<br>
+4. Finally, I implemented a privacy-preserving federated learning in which model is first encrypted and then send to other node ( refer to Encrypted_Federated.py).<br>
 ## Screen Shots
-# Application
+## Application
 First, it means in order to participate in the 
 deep learning supply chain, people don’t technically have to send their data to anyone. 
 Valuable models in healthcare, personal management, and other sensitive areas can be 
