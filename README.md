@@ -7,24 +7,24 @@ The data owned by a single party may be very homogeneous, resulting in overfitti
 Federated learning is about a model going into a secure environment and learning how to solve a problem without needing the data to move anywhere.<br>
 ## Installation
 This project is developed using python 3.8.8. If you are using any lower version of python then I recommend you to upgrade your python to the latest version by using pip command. Follow the steps below to run this project locally.<br>
-** STEP 1: ** git clone the repository
+**STEP 1:** git clone the repository
 ```
 git clone https://github.com/reenasheoran/Hide-Data-Footprints.git
 cd Hide-Data-Footprints
 ```
-** STEP 2: ** To execute the basic model training on centralized data run the following command.<br>
+**STEP 2:** To execute the basic model training on centralized data run the following command.<br>
 ```
 python Basic.py
 ```
-** STEP 3: ** To execute the federated model learning on decentralized data run the following command.<br>
+**STEP 3:** To execute the federated model learning on decentralized data run the following command.<br>
 ```
 python Federated.py
 ```
-** STEP 4: ** To check client data leakage by reverse engineering run the following command.<br>
+**STEP 4:** To check client data leakage by reverse engineering run the following command.<br>
 ```
 python Client_data_leak.py
 ```
-** STEP 5: ** To execute the secure federateed learning run the following command.<br>
+**STEP 5:** To execute the secure federateed learning run the following command.<br>
 ```
 python Encrypted_federated.py
 ```
