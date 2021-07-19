@@ -53,20 +53,18 @@ In this project, I began with the simple email spam/ham classifier that was crea
 3. Then I tried reverse engineering on the model received from one of the client node, through federated learning, to get some idea about the respective client's training data (refer to Client_data_leak.py).<br>
 4. Finally, I implemented a privacy-preserving federated learning in which model is first encrypted and then send to other node ( refer to Encrypted_Federated.py).<br>
 ## Screen Shots
+1. Output of Basic model, where I got an accuracy of 99.45%. Here, the complete data is stored at one centralized serever.<br><br>
 ![Image1](https://github.com/reenasheoran/Hide-Data-Footprints/blob/main/static/Basic_Output.png)<br><br>
+2. Output of federated model, where I got an accuracy of  on the same data,this time the data is splitted and stored at several locations.<br><br>
 ![Image2](https://github.com/reenasheoran/Hide-Data-Footprints/blob/main/static/Federated_Output.png)<br><br>
+3. Output of Client_data_leak, in this you can see that the model receiver with the help of reverse engineering got an idea of clients private data.<br><br>
 ![Image3](https://github.com/reenasheoran/Hide-Data-Footprints/blob/main/static/CDL_Output.png)<br><br>
+# Output of Encrypted_Federated model, here the data is encrypted and exchanged among clients. Further the final model sent to the model creator is made completely anonymous.<br><br>
 ![Image4](https://github.com/reenasheoran/Hide-Data-Footprints/blob/main/static/EFederated_Output.png)<br><br>
 ## Conclusion
-## Application
-First, it means in order to participate in the 
-deep learning supply chain, people don’t technically have to send their data to anyone. 
-Valuable models in healthcare, personal management, and other sensitive areas can be 
-trained without requiring anyone to disclose information about themselves. In theory, 
-people could retain control over the only copy of their personal data (at least as far as deep 
-learning is concerned).
-This technique will also have a huge impact on the competitive landscape of deep learning 
-in corporate competition and entrepreneurship. Large enterprises that previously wouldn’t 
-(or couldn’t, for legal reasons) share data about their customers can potentially still earn 
-revenue from that data.
+## Application 
+1. Using secure federated learning, the Valuable models in healthcare, personal management, and other sensitive areas can be trained without requiring anyone to disclose information about themselves. In theory, people could retain control over the only copy of their personal data .<br><br>
+2. This technique will also have a huge impact on the competitive landscape of deep learning in corporate competition and entrepreneurship. Large enterprises that previously wouldn’t (or couldn’t, for legal reasons) share data about their customers can potentially still earn revenue from that data.<br<br>
 ## References
+1. Fang, H.; Qian, Q. Privacy Preserving Machine Learning with Homomorphic Encryption and Federated Learning. Future Internet 2021, 13, 94. https://doi.org/10.3390/fi13040094
+2. https://towardsdatascience.com/perfectly-privacy-preserving-ai-c14698f322f5
