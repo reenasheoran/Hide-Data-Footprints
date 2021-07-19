@@ -53,6 +53,10 @@ In this project, I began with the simple email spam/ham classifier that was crea
 3. Then I tried reverse engineering on the model received from one of the client node, through federated learning, to get some idea about the respective client's training data (refer to Client_data_leak.py).<br>
 4. Finally, I implemented a privacy-preserving federated learning in which model is first encrypted and then send to other node ( refer to Encrypted_Federated.py).<br>
 ## Screen Shots
+![Image1](https://github.com/reenasheoran/Hide-Data-Footprints/blob/main/static/Basic_Output.png)<br><br>
+![Image2](https://github.com/reenasheoran/Hide-Data-Footprints/blob/main/static/Federated_Output.png)<br><br>
+![Image3](https://github.com/reenasheoran/Hide-Data-Footprints/blob/main/static/CDL_Output.png)<br><br>
+![Image4](https://github.com/reenasheoran/Hide-Data-Footprints/blob/main/static/EFederated_Output.png)<br><br>
 ## Conclusion
 ## Application
 First, it means in order to participate in the 
