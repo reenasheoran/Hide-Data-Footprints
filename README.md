@@ -35,14 +35,18 @@ python Client_data_leak.py
 python Encrypted_federated.py
 ```
 ## Data Collection
-The data was taken from http://www2.aueb.gr/users/ion/data/enron-spam/, which was in partially processed form.<br>
-I created the vocabulary (size: 50635) and then made all the emails exactly of 500 words long by either trimming the email or padding it with <unk> tokens. Doing so made the final dataset square.
-then indexed the words to make the data ready for model training.<br>
+The data was taken from http://www2.aueb.gr/users/ion/data/enron-spam/, which was in partially preprocessed form.The data originally contains 43908 emails with spam/ham labels.<br>
+I created the vocabulary (size: 50635) and then made all the emails exactly of 500 words long by either trimming the email or padding it with <unk> tokens. Doing so made the final dataset square and then indexed the words to make the data ready for model training.<br>
 ## Data Preparation
 I used the data in two ways and did splitting of data accordingly.<br>
-1. For my basic model, I split the data into training and test set only, 
-
+1. For my basic model, I split the original data into training set (size: 41908) and test set (size: 2000) only.
+2. For my federated models, I split the original data into 4 parts, Client_1 train data(size: 1000), client_2 training data(size: 1000) and Client_3 training_data (Size: 39908) and test data (size: 2000). I intentionally kept Client_3 training data big to have variations close to real-world scenario, as one company could have a large data at its first setup location and less data at its new setup locations.<br>
 ## Project Lifecycle
+ In this project, I began with the simple email spam/ham classifier that was created without the use of any standard library such as keras, tensorflow or Pytorch. Then, I took the steps as follows:- <br>
+1. I created my first model using a centralized data to check the model accuracy level when the data is at one place.<br>
+2. In my second model I simulated a federated learning environment that has multiple data locations. The model is trained using the data available on those locations by sending and receiving model updates.<br>
+3. Then I tried reverse engineering on the model received from one of the client node, through federated learning, to get some idea about the respective client's training data.<br>
+4. Finally, I implemented a privacy-preserving federated learning in which model is first encrypted and then send to other node.<br>
 ## Screen Shots
 # Application
 First, it means in order to participate in the 
